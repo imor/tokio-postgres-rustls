@@ -13,14 +13,14 @@ const-oid = { version = "0.9.6", default-features = false, features = ["db"] }
 ring = { version = "0.17", default-features = false }
 rustls = { version = "0.23", default-features = false }
 tokio = { version = "1", default-features = false }
-tokio-postgres = { version = "0.7", default-features = false }
+tokio-postgres = { git = "https://github.com/imor/rust-postgres", rev = "20265ef38e32a06f76b6f9b678e2077fc2211f6b", default-features = false }
 tokio-rustls = { version = "0.26", default-features = false }
 x509-cert = { version = "0.2.5", default-features = false, features = ["std"] }
 
 [dev-dependencies]
 env_logger = { version = "0.11", default-features = false }
 tokio = { version = "1", default-features = false, features = ["macros", "rt"] }
-tokio-postgres = { version = "0.7", default-features = false, features = [
+tokio-postgres = { git = "https://github.com/imor/rust-postgres", rev = "20265ef38e32a06f76b6f9b678e2077fc2211f6b", default-features = false, features = [
   "runtime",
 ] }
 rustls = { version = "0.23", default-features = false, features = [
